@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace @class
+{
+    class area
+    {
+        int _length;
+        int _width;
+
+        public area(int length, int width)
+        {
+            this._length = length;
+            this._width = width;
+        }
+
+        public void printResult()
+        {
+            int area = _length * _width; 
+            Console.WriteLine("Area ="+ area);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            area obj = new area(6,6);
+            obj.printResult();
+            Console.ReadLine();
+        }
+    }
+}
